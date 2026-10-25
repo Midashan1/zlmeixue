@@ -189,6 +189,20 @@
   .gate-btn:active{background:#06ad56}
   .gate-tip{margin-top:12px;font-size:12px;color:var(--ink-3)}
 
+  .wxtip{
+    position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.72);color:#fff;
+    display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-start;
+    padding:10px 16px 0;gap:10px;
+  }
+  .wxtip[hidden]{display:none}
+  .wxarrow{animation:nudge 1.1s ease-in-out infinite}
+  .wxtext{font-size:15px;line-height:1.75;text-align:right;padding-right:4px}
+  .wxtext b{font-size:18px;letter-spacing:2px}
+  @keyframes nudge{
+    0%,100%{transform:translate(0,0)}
+    50%{transform:translate(-4px,4px)}
+  }
+
   @media print{
     body{background:#fff}
     .panel,.filters,.acts,.sortwrap,.totop{display:none}
@@ -250,6 +264,16 @@
 </button>
 
 <div class="toast" id="toast"></div>
+
+<div class="wxtip" id="wxtip" hidden>
+  <div class="wxarrow">
+    <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6">
+      <path d="M20 4 9 15"></path><path d="M20 4v7"></path><path d="M20 4h-7"></path>
+      <path d="M4 9v10a1 1 0 0 0 1 1h10"></path>
+    </svg>
+  </div>
+  <div class="wxtext">点击右上角 <b>···</b><br>分享给微信好友或群</div>
+</div>
 
 <div class="gate" id="gate" hidden>
   <div class="gate-card">
@@ -380,6 +404,10 @@ function render(){
         try{ await navigator.share({title: title, url: url}); return; }
         catch(err){ if(err && err.name === "AbortError") return; }
       }
+      if(/MicroMessenger/i.test(navigator.userAgent)){
+        showWxTip();           // 微信内：引导用右上角菜单转发
+        return;
+      }
       const ok = await copyText(url);
       btn.classList.add("ok");
       setTimeout(()=>btn.classList.remove("ok"), 1200);
@@ -402,6 +430,15 @@ async function copyText(text){
   try{ document.execCommand("copy"); }catch(_){ ok = false; }
   ta.remove();
   return ok;
+}
+
+let wt;
+function showWxTip(){
+  const el = $("#wxtip");
+  el.hidden = false;
+  el.onclick = () => el.hidden = true;
+  clearTimeout(wt);
+  wt = setTimeout(()=>el.hidden = true, 4000);
 }
 
 let tt;
