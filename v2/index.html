@@ -106,8 +106,14 @@
 
   .list{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
   .row{
-    display:grid;grid-template-columns:92px 1fr auto;gap:14px;align-items:start;
+    display:grid;grid-template-columns:22px 92px 1fr auto;gap:12px;align-items:start;
     padding:13px 16px;border-bottom:1px solid #eef1f6;transition:background .12s;
+  }
+  .row.sel{background:#eef4ff}
+  .chk{display:flex;align-items:flex-start;padding-top:3px;cursor:pointer}
+  .chk input{
+    width:17px;height:17px;accent-color:var(--accent);cursor:pointer;
+    margin:0;border-radius:4px;
   }
   .row:last-child{border-bottom:none}
   .row:hover{background:#f6f9ff}
@@ -166,6 +172,40 @@
 
   footer{margin-top:22px;text-align:center;font-size:12px;color:var(--ink-3);line-height:1.9}
   footer b{color:var(--ink-2);font-weight:500}
+
+  /* 多选操作条 */
+  .selbar{
+    position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;align-items:center;gap:8px;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+    border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(16,24,40,.08);
+  }
+  .selbar[hidden]{display:none}
+  .sb-count{font-size:13px;color:var(--ink-2);white-space:nowrap}
+  .sb-count b{color:var(--accent);font-size:15px;margin:0 2px}
+  .sb-btn{
+    border:1px solid var(--line);background:#fff;color:var(--ink-2);font-family:inherit;
+    font-size:13px;padding:7px 11px;border-radius:8px;cursor:pointer;white-space:nowrap;
+  }
+  .sb-btn:hover{border-color:#c6d5ee;color:var(--accent)}
+  .sb-btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .sb-btn.primary:hover{background:#28497f;color:#fff}
+  .sb-x{
+    margin-left:auto;border:none;background:transparent;color:var(--ink-3);font-size:20px;
+    line-height:1;cursor:pointer;padding:2px 6px;
+  }
+  body.hasbar{padding-bottom:78px}
+
+  .banner{
+    display:flex;align-items:center;gap:10px;justify-content:space-between;
+    background:var(--accent-soft);border:1px solid #d6e2f7;border-radius:9px;
+    padding:9px 13px;margin-bottom:10px;font-size:13px;color:var(--accent);
+  }
+  .banner[hidden]{display:none}
+  .banner button{
+    border:1px solid var(--accent);background:#fff;color:var(--accent);font-family:inherit;
+    font-size:12.5px;padding:4px 10px;border-radius:7px;cursor:pointer;white-space:nowrap;
+  }
 
   .toast{
     position:fixed;left:50%;bottom:34px;transform:translate(-50%,14px);
@@ -235,7 +275,9 @@
     .fline::-webkit-scrollbar{display:none}
     .chip{flex:0 0 auto;padding:5px 10px;font-size:12.5px}
     .meta{margin:13px 2px 7px;font-size:12.5px}
-    .row{grid-template-columns:1fr auto;gap:6px 10px;padding:11px 13px}
+    .row{grid-template-columns:20px 1fr auto;gap:6px 8px;padding:11px 12px}
+    .chk{padding-top:2px}
+    .chk input{width:16px;height:16px}
     .date{display:none}
     .ttl{font-size:14.5px;line-height:1.5}
     .tags{margin-top:4px;gap:5px}
@@ -300,6 +342,11 @@
     </div>
   </div>
 
+  <div class="banner" id="banner" hidden>
+    <span id="bannerText">这是分享清单</span>
+    <button id="bannerClear">查看全部</button>
+  </div>
+
   <div class="list" id="list"></div>
   <div class="albums" id="albums" hidden></div>
   <div id="mine" hidden></div>
@@ -308,6 +355,14 @@
     收录 <b id="ftotal">0</b> 篇 · 最新一篇 <span id="fdate">—</span><br>
     链接为微信永久链接，若提示「内容已删除」说明原文已下架
   </footer>
+</div>
+
+<div class="selbar" id="selbar" hidden>
+  <div class="sb-count">已选 <b id="selN">0</b> 篇</div>
+  <button class="sb-btn" id="sbAll">全选</button>
+  <button class="sb-btn" id="sbCopy">复制清单</button>
+  <button class="sb-btn primary" id="sbShare">分享</button>
+  <button class="sb-x" id="sbClear" aria-label="取消选择">×</button>
 </div>
 
 <button class="totop" id="totop" aria-label="回到顶部">
@@ -351,7 +406,9 @@ const ACCOUNT_ORDER = ["我是质量背锅侠", "质量美学"];
 
 const FAV_KEY = "zlmeixue_fav";
 const HIS_KEY = "zlmeixue_recent";
-const state = { view:"search", q:"", acct:"all", album:"all", type:"all", sort:"new" };
+const state = { view:"search", q:"", acct:"all", album:"all", type:"all", sort:"new", list:null };
+const SEL = new Set();
+let SHARED_IDS = null;
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -437,7 +494,8 @@ function rowHTML(d, terms){
   const cls = d.acct === ACCOUNT_ORDER[0] ? "tag" : "who";
   const isFav = FAV.includes(d.url);
   const ty = (d.types || []).slice(0,2).map(t => `<span class="ty">${esc(t)}</span>`).join("");
-  return `<div class="row">
+  return `<div class="row${SEL.has(d.id) ? " sel" : ""}" data-id="${esc(d.id)}">
+    <label class="chk"><input type="checkbox" data-sel="${esc(d.id)}"${SEL.has(d.id) ? " checked" : ""} aria-label="选择"></label>
     <div class="date">${day}<span class="tm">${time}</span></div>
     <div class="main">
       <a class="ttl" href="${esc(d.url)}" target="_blank" rel="noopener noreferrer">${highlight(d.title, terms)}</a>
@@ -484,6 +542,7 @@ function pool(){
 function current(){
   const terms = state.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
   let rows = DATA.filter(d => {
+    if(state.list && !state.list.includes(d.id)) return false;
     if(state.acct !== "all" && d.acct !== state.acct) return false;
     if(state.album !== "all" && (d.album || "未归类") !== state.album) return false;
     if(state.type !== "all" && !(d.types || []).includes(state.type)) return false;
@@ -502,6 +561,7 @@ function current(){
 /* ---------- 各视图 ---------- */
 function renderSearch(){
   const {rows, terms} = current();
+  window._rows = rows;
   $(".mlabel").innerHTML = "找到 <b>" + rows.length + "</b> 篇";
   const list = $("#list");
   if(!rows.length){
@@ -633,6 +693,33 @@ function buildTypeChips(){
   });
 }
 
+/* ---------- 多选 ---------- */
+function updateSelBar(){
+  const n = SEL.size;
+  $("#selN").textContent = n;
+  $("#selbar").hidden = n === 0;
+  document.body.classList.toggle("hasbar", n > 0);
+}
+function setSel(id, on){
+  if(on) SEL.add(id); else SEL.delete(id);
+  const row = document.querySelector(`.row[data-id="${(window.CSS && CSS.escape) ? CSS.escape(id) : id}"]`);
+  if(row) row.classList.toggle("sel", on);
+  updateSelBar();
+}
+function selectedRows(){
+  return DATA.filter(d => SEL.has(d.id));
+}
+function buildShareLink(){
+  return location.origin + location.pathname + "?list=" + [...SEL].join(",");
+}
+function buildListText(){
+  const NL = String.fromCharCode(10);
+  const rows = selectedRows();
+  let txt = "质量背锅侠&美学文章库 · 精选 " + rows.length + " 篇" + NL + NL;
+  rows.forEach((d, i) => { txt += (i + 1) + ". " + d.title + NL + d.url + NL + NL; });
+  return txt.trim();
+}
+
 /* ---------- 交互 ---------- */
 async function copyText(text){
   try{
@@ -731,7 +818,27 @@ async function boot(){
       return;
     }
   }
-  DATA.forEach(d => { d.types = detectTypes(d.title); });
+  DATA.forEach(d => {
+    d.types = detectTypes(d.title);
+    const m = (d.url || "").match(/[?&]mid=(\d+)/);
+    d.id = m ? m[1] : (d.url || "").slice(-20);
+  });
+
+  // 分享清单：?list=id1,id2,...
+  const listParam = new URLSearchParams(location.search).get("list");
+  if(listParam){
+    const ids = listParam.split(",").map(x => x.trim()).filter(Boolean);
+    SHARED_IDS = ids;
+    const found = DATA.filter(d => ids.includes(d.id)).length;
+    state.list = ids;
+    if(found){
+      $("#bannerText").textContent = "这是分享清单，共 " + found + " 篇";
+      $("#banner").hidden = false;
+    }else{
+      $("#bannerText").textContent = "分享清单里的文章已更新或下架";
+      $("#banner").hidden = false;
+    }
+  }
 
   $("#total").textContent = DATA.length;
   $("#ftotal").textContent = DATA.length;
@@ -744,6 +851,46 @@ async function boot(){
   buildTypeChips();
   renderSearch();
 }
+
+document.addEventListener("change", (e) => {
+  const box = e.target.closest("[data-sel]");
+  if(box){ setSel(box.dataset.sel, box.checked); }
+});
+$("#sbClear").onclick = () => {
+  SEL.clear();
+  document.querySelectorAll("[data-sel]").forEach(b => { b.checked = false; });
+  document.querySelectorAll(".row.sel").forEach(r => r.classList.remove("sel"));
+  updateSelBar();
+};
+$("#sbAll").onclick = () => {
+  const rows = (window._rows || []);
+  const allOn = rows.every(d => SEL.has(d.id));
+  rows.forEach(d => { if(allOn) SEL.delete(d.id); else SEL.add(d.id); });
+  renderSearch();
+  updateSelBar();
+};
+$("#sbCopy").onclick = async () => {
+  const txt = buildListText();
+  if(!txt) return;
+  const ok = await copyText(txt);
+  toast(ok ? "清单已复制（标题 + 链接）" : "复制失败，请手动选择");
+};
+$("#sbShare").onclick = async () => {
+  const ids = [...SEL];
+  if(!ids.length) return;
+  const url = buildShareLink();
+  if(navigator.share){
+    try{ await navigator.share({title: document.title + " · " + ids.length + " 篇", url: url}); return; }
+    catch(err){ if(err && err.name === "AbortError") return; }
+  }
+  const ok = await copyText(url);
+  toast(ok ? "分享链接已复制，粘贴给好友即可" : "复制失败，请手动复制地址栏");
+};
+$("#bannerClear").onclick = () => {
+  state.list = null;
+  $("#banner").hidden = true;
+  buildAlbumChips(); buildTypeChips(); renderSearch();
+};
 
 document.querySelectorAll(".tab").forEach(t => t.onclick = () => switchView(t.dataset.view));
 $("#q").addEventListener("input", e => {
