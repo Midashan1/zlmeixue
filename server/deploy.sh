@@ -96,6 +96,18 @@ CRON
   (systemctl enable --now crond 2>/dev/null || systemctl enable --now cron 2>/dev/null || true)
 fi
 
+# 6.5) 套用正式站点配置（含 /zlmeixue/ 路径），避免重部署把路径冲掉
+CANON=https://cdn.jsdelivr.net/gh/Midashan1/zlmeixue@main/server/nginx-zlmeixue.conf
+if curl -fsSL "$CANON" -o /tmp/zlm-canon.conf 2>/dev/null; then
+  sed -e "s/listen 8090/listen ${PORT}/g" -e "s/listen \[::\]:8090/listen [::]:${PORT}/g"       /tmp/zlm-canon.conf > /etc/nginx/conf.d/zlmeixue.conf
+  if nginx -t >/dev/null 2>&1; then
+    systemctl reload nginx
+    echo "  已套用正式站点配置（访问路径 /zlmeixue/）"
+  else
+    echo "  ! 正式配置校验失败，保留端口直连配置"
+  fi
+fi
+
 echo "==> 7/7 自检"
 IP=$(curl -s --max-time 5 https://api.ipify.org || echo "<服务器IP>")
 curl -s -o /dev/null -w "  首页        HTTP %{http_code}\n" "http://127.0.0.1:${PORT}/" || true
