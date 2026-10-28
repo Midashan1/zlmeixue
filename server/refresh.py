@@ -232,7 +232,8 @@ def main() -> None:
         )
 
     write_json(rows, out_json)
-    write_status(BASE / "deploy" / "status.json", rows, failures, restored)
+    # 状态文件放在 articles.json 旁边：线上即可直接访问 /zlmeixue/status.json 自查
+    write_status(out_json.parent / "status.json", rows, failures, restored)
 
     accts = {}
     for r in rows:
