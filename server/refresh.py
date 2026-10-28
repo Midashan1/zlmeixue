@@ -38,8 +38,10 @@ def load_config() -> list[dict]:
     return accts
 
 
-def refresh(quiet: bool = False) -> list[dict]:
+def refresh(quiet: bool = False) -> tuple[list[dict], list[dict]]:
+    """返回 (去重后的文章行, 失败合集列表)。单个合集失败不影响整批。"""
     rows: list[dict] = []
+    failures: list[dict] = []
     for acct in load_config():
         name, biz = acct["name"], acct["biz"]
         if not quiet:
@@ -49,8 +51,10 @@ def refresh(quiet: bool = False) -> list[dict]:
                 print(f"  [{i}/{len(acct['albums'])}] 合集 {aid}")
             try:
                 arts, meta = af.walk_album(biz, aid)
-            except SystemExit as exc:          # 单个合集失败不拖垮整批
-                print(f"    ! 跳过：{exc}")
+            except (SystemExit, Exception) as exc:   # 单个合集失败不拖垮整批
+                msg = str(exc) or exc.__class__.__name__
+                print(f"    ! 跳过：{msg}")
+                failures.append({"acct": name, "album_id": aid, "error": msg[:200]})
                 continue
             album_name = meta.get("title") or f"album_{aid}"
             for r in arts:
@@ -74,7 +78,45 @@ def refresh(quiet: bool = False) -> list[dict]:
         seen.add(key)
         uniq.append(r)
     uniq.sort(key=lambda r: r["ts"], reverse=True)
-    return uniq
+    return uniq, failures
+
+
+def merge_previous(rows: list[dict], prev: list[dict], quiet: bool = False) -> tuple[list[dict], list[str]]:
+    """某个合集这次抓到的条数明显变少（多半是被风控/接口异常），用上次的数据补齐，
+    避免"静默丢文章"。返回 (合并后的行, 被回填的合集名)。"""
+    from collections import defaultdict
+
+    def group(data):
+        g = defaultdict(list)
+        for r in data:
+            g[(r.get("acct", ""), r.get("album", ""))].append(r)
+        return g
+
+    prev_g, new_g = group(prev), group(rows)
+    restored = []
+    for key, plist in prev_g.items():
+        if not plist:
+            continue
+        n = len(new_g.get(key, []))
+        if n >= len(plist) * 0.8:          # 抓全了或正常增减，不干预
+            continue
+        have = {r["url"].split("&chksm=")[0] for r in new_g.get(key, [])}
+        add = [r for r in plist if r["url"].split("&chksm=")[0] not in have]
+        if add:
+            rows.extend(add)
+            restored.append(f"{key[0]}·{key[1]}（补回 {len(add)} 篇）")
+            if not quiet:
+                print(f"    · 回填《{key[1]}》{len(add)} 篇（本次只抓到 {n}/{len(plist)}）")
+
+    seen, out = set(), []
+    for r in rows:
+        k = r["url"].split("&chksm=")[0]
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append(r)
+    out.sort(key=lambda r: r["ts"], reverse=True)
+    return out, restored
 
 
 def write_json(rows: list[dict], path: Path) -> None:
@@ -96,9 +138,12 @@ def write_xlsx(rows: list[dict], path: Path) -> None:
         wb = Workbook()
         wb.remove(wb.active)
 
-    by_acct: dict[str, list[dict]] = {}
+    # 分表顺序必须跟 accounts.json 一致：build_library.py 约定「文章清单」= 一号账号。
+    # 若按 rows 出现顺序建表，哪号最新发过文章就会抢到「文章清单」，导致两个账号标签互换。
+    by_acct: dict[str, list[dict]] = {a["name"]: [] for a in load_config()}
     for r in rows:
         by_acct.setdefault(r["acct"], []).append(r)
+    by_acct = {k: v for k, v in by_acct.items() if v}   # 空账号不出空表
 
     SHEETS = ["文章清单", "二号·文章清单", "三号·文章清单"]
     for idx, (name, items) in enumerate(by_acct.items()):
@@ -132,20 +177,62 @@ def write_xlsx(rows: list[dict], path: Path) -> None:
     wb.save(path)
 
 
+def load_previous(path: Path) -> list[dict]:
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return data if isinstance(data, list) else []
+    except Exception:
+        return []
+
+
+def write_status(path: Path, rows: list[dict], failures: list[dict], restored: list[str]) -> None:
+    """写一份刷新状态，方便排查"为什么没更新"。"""
+    from datetime import datetime, timezone, timedelta
+
+    accts: dict[str, int] = {}
+    for r in rows:
+        accts[r["acct"]] = accts.get(r["acct"], 0) + 1
+    status = {
+        "refreshed_at": datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S"),
+        "total": len(rows),
+        "by_account": accts,
+        "newest": {"ts": rows[0]["ts"], "title": rows[0]["title"]} if rows else None,
+        "failed_albums": failures,
+        "restored_albums": restored,
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="刷新文章库数据")
     ap.add_argument("--json", default=str(BASE / "deploy" / "articles.json"))
     ap.add_argument("--xlsx", action="store_true", help="同时更新 out/all_articles.xlsx")
     ap.add_argument("--build", action="store_true", help="同时重建离线 HTML")
+    ap.add_argument("--force", action="store_true", help="篇数大幅缩水时也照写")
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
 
-    rows = refresh(quiet=args.quiet)
+    out_json = Path(args.json)
+    prev = load_previous(out_json)
+
+    rows, failures = refresh(quiet=args.quiet)
+    restored: list[str] = []
+    if prev:
+        rows, restored = merge_previous(rows, prev, quiet=args.quiet)
+
     if not rows:
         raise SystemExit("× 一篇都没抓到，检查网络或 accounts.json")
 
-    out_json = Path(args.json)
+    # 防止一次异常把已有数据冲成半截
+    if prev and len(rows) < len(prev) * 0.9 and not args.force:
+        raise SystemExit(
+            f"× 本次只抓到 {len(rows)} 篇，上次有 {len(prev)} 篇，疑似大面积失败；"
+            f"已保留旧数据。确认无误可加 --force"
+        )
+
     write_json(rows, out_json)
+    write_status(BASE / "deploy" / "status.json", rows, failures, restored)
 
     accts = {}
     for r in rows:
@@ -153,6 +240,10 @@ def main() -> None:
     print(f"\n共 {len(rows)} 篇 → {out_json}")
     print("按账号：" + " / ".join(f"{k} {v} 篇" for k, v in accts.items()))
     print(f"最新一篇：{rows[0]['ts']}  {rows[0]['title'][:30]}")
+    if failures:
+        print(f"! 有 {len(failures)} 个合集抓取失败：" + "、".join(f["album_id"] for f in failures))
+    if restored:
+        print("· 已用旧数据回填：" + "；".join(restored))
 
     if args.xlsx:
         write_xlsx(rows, BASE / "out" / "all_articles.xlsx")
