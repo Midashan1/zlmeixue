@@ -104,9 +104,14 @@ def walk_album(biz: str, album_id: str) -> tuple[list[dict], dict]:
         if page == 1:
             meta = resp.get("base_info") or {}
         arts = resp.get("article_list") or []
+        # 微信偶发把「只剩一条」的末页返回成对象而不是数组，此时遍历会得到 key 字符串
+        if isinstance(arts, dict):
+            arts = [arts]
+        elif not isinstance(arts, list):
+            arts = []
         print(f"    第 {page} 页：{len(arts)} 条")
         for a in arts:
-            if not a.get("title"):
+            if not isinstance(a, dict) or not a.get("title"):
                 continue
             rows.append({
                 "标题": a.get("title", "").strip(),
