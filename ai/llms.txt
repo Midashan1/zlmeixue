@@ -1,6 +1,6 @@
 # 质量背锅侠&质量美学文章库 · AI 可读版
 
-> 两个公众号（我是质量背锅侠、质量美学）共 467 篇文章的完整索引。每篇文章是 PPT 截图型图文，正文无文字节点；本索引提供标题、发布日期、合集与公众号原文链接。已 OCR 出文字的 115 篇见 full/ 目录。数据每天 09:00 自动更新。
+> 两个公众号（我是质量背锅侠、质量美学）共 470 篇文章的完整索引。每篇文章是 PPT 截图型图文，正文无文字节点；本索引提供标题、发布日期、合集与公众号原文链接。已 OCR 出文字的 117 篇见 full/ 目录。数据每天 09:00 自动更新。
 
 ## 说明
 
@@ -9,56 +9,10 @@
 
 ## 我是质量背锅侠
 
-### 工艺部总结（19 篇）
+### 质量部总结（54 篇）
 
-- [40页工艺工程部长2026年工作总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247496227&idx=1&sn=cbfd61c65445d5a89878243c0e297319&chksm=969867bba1efeead5dcd17610285dcd584be74f65b969fc0ec0bda85ed964c6c8e91ab1e4f17) — 2026-11-20
-- [35页精益制造部（IE）经理2026年工作总结及规划PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247496125&idx=1&sn=8b0e37e17d403b367f4ba705700f34c2&chksm=96986425a1efed33ca3190328c174f9f0d3218cbe9034e747d2620f6b4d88561965769b9ddfc) — 2026-11-17
-- [工艺部经理10月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495849&idx=1&sn=63705711631d408c643e451bc0a538ec&chksm=96986531a1efec27b91db55a91d102482312efda0f0f73e84b5cfbbc83a192d9056310170e3f) — 2026-11-05
-- [精选|工艺技术部部长8月份工作总结及规划PPT报告模板,支持替换数据](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247494222&idx=1&sn=fe035ec9ed6596c0c93a4f7bcc1eb338&chksm=96987fd6a1eff6c033412b3c6f6b76011824d14c18f44e4a303b96b8ff3b71ac303248af63df) — 2026-09-08
-- [工艺技术部经理月度工作总结及规划PPT报告模板，用数据说明干了什么](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247493703&idx=1&sn=22a29b0f1f33d96710b529032695732b&chksm=96987ddfa1eff4c99647d496a1396be2d590ad799601bd7a9d7d5819e86607cd2d9304122ad0) — 2026-08-26
-- [工艺部长2026年半年度述职PPT报告模板，高密度汇报风格](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492586&idx=1&sn=a74f65cbbb30bea831801ce86c336731&chksm=96987672a1efff64fa790c177c06910c80603c9b41e83a17fd7a28fa598e16a8d1cc990cd913) — 2026-07-18
-- [工艺工程部6月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492203&idx=1&sn=c8aef6d06d6045b4c0c6dfd5d0bb3f8a&chksm=969877f3a1effee5608de1cc7635b86a294b2a350793b7ad1d78e4089a21b5fe24acd5ac5a54) — 2026-07-06
-- [工艺工程部5月工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491489&idx=1&sn=a1c79bd291503db2699cc885a885a9d6&chksm=969b8a39a1ec032f850ae3a8f3aa2488903c9b9cac446dfa1a9cf9d06b8ba308ba59660e7a0f) — 2026-06-05
-- [工艺技术部4月工作总结及规划PPT报告，逻辑清晰分析透彻](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490977&idx=1&sn=c9d6c3ba5a0fe3902ac592d9d4bf7221&chksm=969b8839a1ec012f3e4c5035a720c152de6c7be9e9626ad62010c177f6adfc2aa889b1abfdb0) — 2026-05-12
-- [工艺工程部26年一季度工作总结及规划报告PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490448&idx=1&sn=4e9008b35a90f02217f15791353c5258&chksm=969b8e08a1ec071eb4171fb667e14c598b2593fab495558a8ffbbe197c1cee605c2cfdc72723) — 2026-04-22
-- [30页工艺工程部月度工作总结及规划PPT范本](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490045&idx=1&sn=c07b9f6588546ecce36a4eae11ef4e58&chksm=969b8c65a1ec0573f38c4fb1fa494a7102c77c6ada1bf7d8cf9f22b668f0557dbfc28c5ac48f) — 2026-04-09
-- [37页工艺工程部3月份工作总结PPT，推荐收藏！](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489891&idx=1&sn=ddbb8e2a0b391d49217f4180683cdc88&chksm=969b8cfba1ec05ed9779ce4a10988eab37bd02a1051fc6972169df626fe517400f1c25590f20) — 2026-04-01
-- [工艺部门年终工作总结汇报PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489835&idx=1&sn=c29e2251cc6e28e762a411ce4cec3dfc&chksm=969b8cb3a1ec05a599c67eaaeec2238b69c94a06517c29db265ef056a70ef7086e9105fe9124) — 2026-03-31
-- [工艺部月度工作总结与规划PPT模板，工艺人员值得收藏](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489354&idx=1&sn=47a6e315957099916375c08107996e25&chksm=969b82d2a1ec0bc4d30e8ec15557b9a23934c4981eef357b866d9db1c940711887c77c30007c) — 2026-03-14
-- [34页PPT讲清工艺工程部长述职与工作规划报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489097&idx=1&sn=8fd275be30d40d58e5cbeac7d848dd50&chksm=969b83d1a1ec0ac701a4f14007fbf3e8ea7e05addc6e27d55fd355d6cf1cf4a17a964bb638ed) — 2026-03-06
-- [工艺经理年终述职报告（报告范文与PPT）](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488576&idx=1&sn=a1509a658efd3fff09664efc9ea3ee06&chksm=969b81d8a1ec08ce30abaf5d00a8fd7bff1422dc1c35a78fcf735cce53cc2522788163fae6f9) — 2026-02-24
-- [工艺工程部年终总结及明年战略规划PPT：内容详细、涵盖具体措施](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488469&idx=1&sn=89b555cdc1aa2f69daf1df9e4c113d39&chksm=969b864da1ec0f5b6d545c3ae15fc643ceabb7e692982b2b39e8d1adabd69921199a2989cda1) — 2026-02-10
-- [工艺部门2025年工作总结暨2026年战略规划PPT，内容丰富、布局精美](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488379&idx=1&sn=1df4779af2d2d826068603a1e27b32f4&chksm=969b86e3a1ec0ff535c6ee71712e23b96d4f89aa993db3bed11771947ebdb1b59affb371ec4d) — 2026-02-04
-- [工艺部长2025年工作复盘与2026年战略规划PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488142&idx=1&sn=ed3f9ea1fe6e069cc7ed8d9682a64def&chksm=969b8716a1ec0e008c23a83933461a0545f095b7f0c07a4a234f2eaf81543898d8569aa9ebbd) — 2026-01-27
-
-### 生产部总结（23 篇）
-
-- [生产部长/厂长2026年工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247496193&idx=1&sn=d72e9f43774a5c0636aa7d5532f1d9b3&chksm=96986799a1efee8f37372947b872ff02abd041f819a6f3c4ab653d34d5a4598e85b14ceb9556) — 2026-11-19
-- [生产部部长10月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495816&idx=1&sn=9d5140c3f551d092b309b18595b4d014&chksm=96986510a1efec06a47edc959394bb469b3d8b5babd22ba8549b95bc2e1924f68f56c6011a44) — 2026-11-04
-- [精选|生产总监/部长2026年工作总结及工作规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495593&idx=1&sn=efb4b88fbdec3873c2a7e6b69c3608b4&chksm=96987a31a1eff327dbcdfa362e5cf5c11523e4b42a5df407f405bc530f7f485d3d6d7b50cda5) — 2026-10-27
-- [生产部经理9月份工作总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495113&idx=1&sn=ae2551962bacacdc77ed5f90503e333a&chksm=96987851a1eff147cf56ec645ee3f36bb98f4ddd9ac59c5722069d5a66e94b4731be4652b894) — 2026-10-10
-- [生产部长/经理月度工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247493654&idx=1&sn=6c37d7d5963292058fd8670fd8636bbf&chksm=96987d8ea1eff49889940b86e950f8c7ad52b549aad37dd77454369e2f4381fe2814054ac0ff) — 2026-08-25
-- [生产部月度经营分析汇报PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247493400&idx=1&sn=69f9a35755ced2e798541151ff778186&chksm=96987280a1effb96d728e1669ccd99919ac7754f2468384bd5b75a9ac889608c9c7c61b79df3) — 2026-08-20
-- [生产部周度工作总结PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247493340&idx=1&sn=605d275e462e92593ba8c69d16145b84&chksm=96987344a1effa524662798e6f4b18065dc2530df7eca4fe5ffeb31f92e7c66dd10f9f985f52) — 2026-08-19
-- [生产部部长/厂长7月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492951&idx=1&sn=7a3880051340f5486c7a81af2a03b8b2&chksm=969870cfa1eff9d94d592c048c8a6ef29a79813becda708670151d402f2034bcc9caa218be82) — 2026-08-04
-- [生产部长7月工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492832&idx=1&sn=dce34a0b0d40ce9e6c91b445d45e4541&chksm=96987178a1eff86ecfdf8f4f107cdf80f92005383b1d37c8aadcbaac8fa57f951db5ccbcf808) — 2026-07-29
-- [生产厂长/部长2026年半年度工作述职PPT报告模板，高密度汇报风格](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492557&idx=1&sn=c21eea59e150ef24f30a8ce7fa781380&chksm=96987655a1efff435fcfd302ef72428cb184ca047717a644390750a99743b67017faf37177fc) — 2026-07-17
-- [生产部部长半年度述职PPT报告模板——适用于中小型企业](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492285&idx=1&sn=e774c7d4d4f9ef15bc250b5764171d80&chksm=96987725a1effe33ea1851862f6377db35539bf4f9bbbf4abcdc7dfdf61468604f049d7ec7d7) — 2026-07-08
-- [生产总监/厂长半年度述职PPT报告，图表支持一键替换数据](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491702&idx=1&sn=d67f776ed47e7ee86f34498a704b2c8b&chksm=969875eea1effcf823e911265dac16135c0f66a6237f3c8709f71aaa56fce7ed8279c11d577e) — 2026-06-15
-- [生产总监半年度工作总结及规划PPT，支持一键更换图表数据](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491658&idx=1&sn=ca29aa2fd9a111c0bdad9b4be751baf5&chksm=969875d2a1effcc47df5b826b65ce09c629db5520a837fcf2690c319ba4b049d214ef34ab145) — 2026-06-12
-- [生产总监5月份工作深入总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491543&idx=1&sn=13649684e148bfb7543ccff4dbe16811&chksm=969b8a4fa1ec035903f0ebdf2ea3de1f6d87a2fe8a408b4bf44a94ad01b2dd65874e2dc150ed) — 2026-06-08
-- [生产总监半年度工作总结PPT，以数据复盘明确下步改善目标](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491222&idx=1&sn=2e60ab148d5f7aa34a72397148b6a59d&chksm=969b8b0ea1ec02183b354fe7114033dc19eb2d3e1ac72090bf4a6a81222a4a8a39d5d0570731) — 2026-05-25
-- [生产部半年度工作总结及规划PPT报告，生产经理推荐收藏](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491147&idx=1&sn=4c3dcee529a40bc015a598880f31e26a&chksm=969b8bd3a1ec02c5cfde834502a7fb37f2581bc64d14a8190b7cfec2e46a52f7b9bad2a0a1a1) — 2026-05-20
-- [34页生产制造部2026年一季度工作总结及规划报告PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490369&idx=1&sn=8d1ea55d6b272741915fb20e4ed643b8&chksm=969b8ed9a1ec07cff82d0def1304fe6fad59a23834257cd9d3c0a89e86d77b6c17f6451e8fc6) — 2026-04-20
-- [生产部周报写作SOP，这套PPT模板让你爱上写周报](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490197&idx=1&sn=5c30e030578a6b426fd268167c4c0e81&chksm=969b8f0da1ec061b2b33b7ef9a36d7b72aade47fb1c6e9917bd0b6971464a27e11f016965931) — 2026-04-14
-- [35页生产部门26年一季度工作总结汇报PPT，值得收藏！](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489932&idx=1&sn=bc904e0d911ce8984f8d8683670e2eb6&chksm=969b8c14a1ec05026db0e8a026147d28878fce6e62c699cda5e09b4fe8225bd49fd630fbcb91) — 2026-04-03
-- [制造业生产部门月度工作总结PPT模板，值得收藏](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489316&idx=1&sn=2ab7bb190c1b51af685a8dae9aa65927&chksm=969b82bca1ec0baa06d815089ba37a52cd2efe160b418cdb5c9912b02680c224ceb60c35a246) — 2026-03-12
-- [深受领导喜欢的生产总监（厂长）年终述职及工作规划PPT，值得收藏！](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489134&idx=1&sn=8afd39c79a14a4d43999bcf4a5f3ff10&chksm=969b83f6a1ec0ae08b0c875721b9098b3a2aeac6923400f744a19db1bdd89d0c4f38f40a16af) — 2026-03-07
-- [生产总监2025年度总结与2026年度七大战略规划（文末PPT）](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488175&idx=1&sn=58898bda6dd4b39c7b8922c0110b8151&chksm=969b8737a1ec0e21e90adc5cbb0e3ac1a91dd7d4d3877cd011765f90990cef88046762ad8e6f) — 2026-01-28
-- [破局立新，智造未来：生产部2025年工作总结与2026年战略规划](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247487768&idx=1&sn=ae1ec24589d3a45d27dd9ee5b45c8770&chksm=969b8480a1ec0d967f0a2b16ee93b66eb2e145bef9a58042e323923a04d6cc045f86a17908e9) — 2026-01-12
-
-### 质量部总结（52 篇）
-
+- [35页研发质量经理2026年工作总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247496295&idx=1&sn=aa0d350641b380408f968b4399e21d7c&chksm=969867ffa1efeee9ac23a7d77a1a96cc012e22e779f7f124afce7b7aec49a3de82ccde14f331) — 2026-11-23
+- [40页实验室管理经理2026年工作总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247496261&idx=1&sn=0e657ce9480d9852d7d380527adcea45&chksm=969867dda1efeecb33fb33e50185098ba0bc6ee59bf231ea7e664e73dda8acdf61c8c1a49eb9) — 2026-11-21
 - [40页质量部长2026年工作总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247496159&idx=1&sn=83c88c889678789ac5a28b8a847fdd9f&chksm=96986447a1efed517117c4f8cdd713a9f42b5aab2402f26b17e371e59b678556a417c552f7c8) — 2026-11-18
 - [质量部长10月份工作总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495781&idx=1&sn=cd075c96410261613fc16cd9bcb659e4&chksm=969865fda1efecebb7e94e90b87e134837a8ddf6812738f15d9d748c028ae29cef1037d06ad7) — 2026-11-03
 - [40页质量部长2026年工作总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495539&idx=1&sn=9791fa75cf7892ff0ed0c8c85deaf720&chksm=96987aeba1eff3fd4a3cc1a08cba24f932560f344d87f402b6a261c06e54349d3cc54c001468) — 2026-10-26
@@ -111,6 +65,54 @@
 - [PQE 制程质量工程师年度工作总结及26年制程五大提升计划PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247487889&idx=1&sn=5ec823d0e2879f8c204543e5a8c24ac0&chksm=969b8409a1ec0d1f65260b87b264ffc26fb74f471acf9e824422fed948a71b1dd2c0fa71b990) — 2026-01-16
 - [质量经理2025年的背锅总结及2026年工作规划PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247487792&idx=1&sn=c7375f7d3a18a34522bf9561e6498cc7&chksm=969b84a8a1ec0dbe722cd53eacfb75f5a77a94e6b91cf3eba7e22ea2fc37919559c91083f033) — 2026-01-13
 - [质量部2025年工作总结与2026年工作规划](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247487747&idx=1&sn=00a8132c1b9d182dd56fa98d94cc8227&chksm=969b849ba1ec0d8dec588199d26969aab0ead4ce99aba0cb70e5dd6209267e975ea99cf41995) — 2026-01-09
+
+### 工艺部总结（19 篇）
+
+- [40页工艺工程部长2026年工作总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247496227&idx=1&sn=cbfd61c65445d5a89878243c0e297319&chksm=969867bba1efeead5dcd17610285dcd584be74f65b969fc0ec0bda85ed964c6c8e91ab1e4f17) — 2026-11-20
+- [35页精益制造部（IE）经理2026年工作总结及规划PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247496125&idx=1&sn=8b0e37e17d403b367f4ba705700f34c2&chksm=96986425a1efed33ca3190328c174f9f0d3218cbe9034e747d2620f6b4d88561965769b9ddfc) — 2026-11-17
+- [工艺部经理10月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495849&idx=1&sn=63705711631d408c643e451bc0a538ec&chksm=96986531a1efec27b91db55a91d102482312efda0f0f73e84b5cfbbc83a192d9056310170e3f) — 2026-11-05
+- [精选|工艺技术部部长8月份工作总结及规划PPT报告模板,支持替换数据](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247494222&idx=1&sn=fe035ec9ed6596c0c93a4f7bcc1eb338&chksm=96987fd6a1eff6c033412b3c6f6b76011824d14c18f44e4a303b96b8ff3b71ac303248af63df) — 2026-09-08
+- [工艺技术部经理月度工作总结及规划PPT报告模板，用数据说明干了什么](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247493703&idx=1&sn=22a29b0f1f33d96710b529032695732b&chksm=96987ddfa1eff4c99647d496a1396be2d590ad799601bd7a9d7d5819e86607cd2d9304122ad0) — 2026-08-26
+- [工艺部长2026年半年度述职PPT报告模板，高密度汇报风格](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492586&idx=1&sn=a74f65cbbb30bea831801ce86c336731&chksm=96987672a1efff64fa790c177c06910c80603c9b41e83a17fd7a28fa598e16a8d1cc990cd913) — 2026-07-18
+- [工艺工程部6月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492203&idx=1&sn=c8aef6d06d6045b4c0c6dfd5d0bb3f8a&chksm=969877f3a1effee5608de1cc7635b86a294b2a350793b7ad1d78e4089a21b5fe24acd5ac5a54) — 2026-07-06
+- [工艺工程部5月工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491489&idx=1&sn=a1c79bd291503db2699cc885a885a9d6&chksm=969b8a39a1ec032f850ae3a8f3aa2488903c9b9cac446dfa1a9cf9d06b8ba308ba59660e7a0f) — 2026-06-05
+- [工艺技术部4月工作总结及规划PPT报告，逻辑清晰分析透彻](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490977&idx=1&sn=c9d6c3ba5a0fe3902ac592d9d4bf7221&chksm=969b8839a1ec012f3e4c5035a720c152de6c7be9e9626ad62010c177f6adfc2aa889b1abfdb0) — 2026-05-12
+- [工艺工程部26年一季度工作总结及规划报告PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490448&idx=1&sn=4e9008b35a90f02217f15791353c5258&chksm=969b8e08a1ec071eb4171fb667e14c598b2593fab495558a8ffbbe197c1cee605c2cfdc72723) — 2026-04-22
+- [30页工艺工程部月度工作总结及规划PPT范本](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490045&idx=1&sn=c07b9f6588546ecce36a4eae11ef4e58&chksm=969b8c65a1ec0573f38c4fb1fa494a7102c77c6ada1bf7d8cf9f22b668f0557dbfc28c5ac48f) — 2026-04-09
+- [37页工艺工程部3月份工作总结PPT，推荐收藏！](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489891&idx=1&sn=ddbb8e2a0b391d49217f4180683cdc88&chksm=969b8cfba1ec05ed9779ce4a10988eab37bd02a1051fc6972169df626fe517400f1c25590f20) — 2026-04-01
+- [工艺部门年终工作总结汇报PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489835&idx=1&sn=c29e2251cc6e28e762a411ce4cec3dfc&chksm=969b8cb3a1ec05a599c67eaaeec2238b69c94a06517c29db265ef056a70ef7086e9105fe9124) — 2026-03-31
+- [工艺部月度工作总结与规划PPT模板，工艺人员值得收藏](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489354&idx=1&sn=47a6e315957099916375c08107996e25&chksm=969b82d2a1ec0bc4d30e8ec15557b9a23934c4981eef357b866d9db1c940711887c77c30007c) — 2026-03-14
+- [34页PPT讲清工艺工程部长述职与工作规划报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489097&idx=1&sn=8fd275be30d40d58e5cbeac7d848dd50&chksm=969b83d1a1ec0ac701a4f14007fbf3e8ea7e05addc6e27d55fd355d6cf1cf4a17a964bb638ed) — 2026-03-06
+- [工艺经理年终述职报告（报告范文与PPT）](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488576&idx=1&sn=a1509a658efd3fff09664efc9ea3ee06&chksm=969b81d8a1ec08ce30abaf5d00a8fd7bff1422dc1c35a78fcf735cce53cc2522788163fae6f9) — 2026-02-24
+- [工艺工程部年终总结及明年战略规划PPT：内容详细、涵盖具体措施](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488469&idx=1&sn=89b555cdc1aa2f69daf1df9e4c113d39&chksm=969b864da1ec0f5b6d545c3ae15fc643ceabb7e692982b2b39e8d1adabd69921199a2989cda1) — 2026-02-10
+- [工艺部门2025年工作总结暨2026年战略规划PPT，内容丰富、布局精美](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488379&idx=1&sn=1df4779af2d2d826068603a1e27b32f4&chksm=969b86e3a1ec0ff535c6ee71712e23b96d4f89aa993db3bed11771947ebdb1b59affb371ec4d) — 2026-02-04
+- [工艺部长2025年工作复盘与2026年战略规划PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488142&idx=1&sn=ed3f9ea1fe6e069cc7ed8d9682a64def&chksm=969b8716a1ec0e008c23a83933461a0545f095b7f0c07a4a234f2eaf81543898d8569aa9ebbd) — 2026-01-27
+
+### 生产部总结（23 篇）
+
+- [生产部长/厂长2026年工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247496193&idx=1&sn=d72e9f43774a5c0636aa7d5532f1d9b3&chksm=96986799a1efee8f37372947b872ff02abd041f819a6f3c4ab653d34d5a4598e85b14ceb9556) — 2026-11-19
+- [生产部部长10月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495816&idx=1&sn=9d5140c3f551d092b309b18595b4d014&chksm=96986510a1efec06a47edc959394bb469b3d8b5babd22ba8549b95bc2e1924f68f56c6011a44) — 2026-11-04
+- [精选|生产总监/部长2026年工作总结及工作规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495593&idx=1&sn=efb4b88fbdec3873c2a7e6b69c3608b4&chksm=96987a31a1eff327dbcdfa362e5cf5c11523e4b42a5df407f405bc530f7f485d3d6d7b50cda5) — 2026-10-27
+- [生产部经理9月份工作总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247495113&idx=1&sn=ae2551962bacacdc77ed5f90503e333a&chksm=96987851a1eff147cf56ec645ee3f36bb98f4ddd9ac59c5722069d5a66e94b4731be4652b894) — 2026-10-10
+- [生产部长/经理月度工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247493654&idx=1&sn=6c37d7d5963292058fd8670fd8636bbf&chksm=96987d8ea1eff49889940b86e950f8c7ad52b549aad37dd77454369e2f4381fe2814054ac0ff) — 2026-08-25
+- [生产部月度经营分析汇报PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247493400&idx=1&sn=69f9a35755ced2e798541151ff778186&chksm=96987280a1effb96d728e1669ccd99919ac7754f2468384bd5b75a9ac889608c9c7c61b79df3) — 2026-08-20
+- [生产部周度工作总结PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247493340&idx=1&sn=605d275e462e92593ba8c69d16145b84&chksm=96987344a1effa524662798e6f4b18065dc2530df7eca4fe5ffeb31f92e7c66dd10f9f985f52) — 2026-08-19
+- [生产部部长/厂长7月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492951&idx=1&sn=7a3880051340f5486c7a81af2a03b8b2&chksm=969870cfa1eff9d94d592c048c8a6ef29a79813becda708670151d402f2034bcc9caa218be82) — 2026-08-04
+- [生产部长7月工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492832&idx=1&sn=dce34a0b0d40ce9e6c91b445d45e4541&chksm=96987178a1eff86ecfdf8f4f107cdf80f92005383b1d37c8aadcbaac8fa57f951db5ccbcf808) — 2026-07-29
+- [生产厂长/部长2026年半年度工作述职PPT报告模板，高密度汇报风格](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492557&idx=1&sn=c21eea59e150ef24f30a8ce7fa781380&chksm=96987655a1efff435fcfd302ef72428cb184ca047717a644390750a99743b67017faf37177fc) — 2026-07-17
+- [生产部部长半年度述职PPT报告模板——适用于中小型企业](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247492285&idx=1&sn=e774c7d4d4f9ef15bc250b5764171d80&chksm=96987725a1effe33ea1851862f6377db35539bf4f9bbbf4abcdc7dfdf61468604f049d7ec7d7) — 2026-07-08
+- [生产总监/厂长半年度述职PPT报告，图表支持一键替换数据](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491702&idx=1&sn=d67f776ed47e7ee86f34498a704b2c8b&chksm=969875eea1effcf823e911265dac16135c0f66a6237f3c8709f71aaa56fce7ed8279c11d577e) — 2026-06-15
+- [生产总监半年度工作总结及规划PPT，支持一键更换图表数据](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491658&idx=1&sn=ca29aa2fd9a111c0bdad9b4be751baf5&chksm=969875d2a1effcc47df5b826b65ce09c629db5520a837fcf2690c319ba4b049d214ef34ab145) — 2026-06-12
+- [生产总监5月份工作深入总结及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491543&idx=1&sn=13649684e148bfb7543ccff4dbe16811&chksm=969b8a4fa1ec035903f0ebdf2ea3de1f6d87a2fe8a408b4bf44a94ad01b2dd65874e2dc150ed) — 2026-06-08
+- [生产总监半年度工作总结PPT，以数据复盘明确下步改善目标](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491222&idx=1&sn=2e60ab148d5f7aa34a72397148b6a59d&chksm=969b8b0ea1ec02183b354fe7114033dc19eb2d3e1ac72090bf4a6a81222a4a8a39d5d0570731) — 2026-05-25
+- [生产部半年度工作总结及规划PPT报告，生产经理推荐收藏](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247491147&idx=1&sn=4c3dcee529a40bc015a598880f31e26a&chksm=969b8bd3a1ec02c5cfde834502a7fb37f2581bc64d14a8190b7cfec2e46a52f7b9bad2a0a1a1) — 2026-05-20
+- [34页生产制造部2026年一季度工作总结及规划报告PPT](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490369&idx=1&sn=8d1ea55d6b272741915fb20e4ed643b8&chksm=969b8ed9a1ec07cff82d0def1304fe6fad59a23834257cd9d3c0a89e86d77b6c17f6451e8fc6) — 2026-04-20
+- [生产部周报写作SOP，这套PPT模板让你爱上写周报](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247490197&idx=1&sn=5c30e030578a6b426fd268167c4c0e81&chksm=969b8f0da1ec061b2b33b7ef9a36d7b72aade47fb1c6e9917bd0b6971464a27e11f016965931) — 2026-04-14
+- [35页生产部门26年一季度工作总结汇报PPT，值得收藏！](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489932&idx=1&sn=bc904e0d911ce8984f8d8683670e2eb6&chksm=969b8c14a1ec05026db0e8a026147d28878fce6e62c699cda5e09b4fe8225bd49fd630fbcb91) — 2026-04-03
+- [制造业生产部门月度工作总结PPT模板，值得收藏](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489316&idx=1&sn=2ab7bb190c1b51af685a8dae9aa65927&chksm=969b82bca1ec0baa06d815089ba37a52cd2efe160b418cdb5c9912b02680c224ceb60c35a246) — 2026-03-12
+- [深受领导喜欢的生产总监（厂长）年终述职及工作规划PPT，值得收藏！](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247489134&idx=1&sn=8afd39c79a14a4d43999bcf4a5f3ff10&chksm=969b83f6a1ec0ae08b0c875721b9098b3a2aeac6923400f744a19db1bdd89d0c4f38f40a16af) — 2026-03-07
+- [生产总监2025年度总结与2026年度七大战略规划（文末PPT）](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247488175&idx=1&sn=58898bda6dd4b39c7b8922c0110b8151&chksm=969b8737a1ec0e21e90adc5cbb0e3ac1a91dd7d4d3877cd011765f90990cef88046762ad8e6f) — 2026-01-28
+- [破局立新，智造未来：生产部2025年工作总结与2026年战略规划](http://mp.weixin.qq.com/s?__biz=MzE5ODQ5MzQzMQ==&mid=2247487768&idx=1&sn=ae1ec24589d3a45d27dd9ee5b45c8770&chksm=969b8480a1ec0d967f0a2b16ee93b66eb2e145bef9a58042e323923a04d6cc045f86a17908e9) — 2026-01-12
 
 ### 质量培训（94 篇）
 
@@ -265,6 +267,18 @@
 
 ## 质量美学
 
+### 运营管理总结（9 篇）
+
+- [45页公司经营分析年终工作总结报告及规划PPT报告](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247493756&idx=1&sn=08a04b6aac5f908abf0ab689fe2957d5&chksm=ffd6879dc8a10e8ba70f24f33cc4bce66cdf76b9471350c42009d2a6ead21f096bdc8e9469a0) — 2026-11-21
+- [总经理2026年工作总结暨公司经营分析报告，50页PPT支持数据编辑](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247493512&idx=1&sn=5e8c683a1c44f1c09d7e0207821572a2&chksm=ffd68869c8a1017f4b685156e32fa12d1e78c1cc8e1f95c1fe2dff308a7a39464fe4388d648f) — 2026-11-13
+- [总经理10月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247493284&idx=1&sn=d308c7f1f3c03fae9bb7f10c8c3624d7&chksm=ffd68945c8a100530ed6efdc2ea6bfada1bbe598d30ffb0f989b550dc4c21fa1ddfa7d5e1166) — 2026-11-06
+- [总经理年度总结暨公司经营分析PPT报告](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247492793&idx=1&sn=4580919621edef2e958564d3dca65ff8&chksm=ffd68b58c8a1024ec12da1ab08cc3406033ea088f306603bbebff1cf8294afe76962c6fd4697) — 2026-10-23
+- [总经理6月工作总结PPT模板——暨公司月度经营分析报告](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247489435&idx=1&sn=547071d3b0623e6d0ffceb70d0ad1499&chksm=ffd5787ac8a2f16c83ab40981d054d2d1fd6fe13f8eca941bcb234764a1623a940e4f80654f6) — 2026-07-07
+- [运营管理部半年度工作总结及规划PPT，图表支持一键替换数据](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247488947&idx=1&sn=9e730a207c717db549c2a1e7825db5bd&chksm=ffd57a52c8a2f3440cd0d5ecc7e13ee39371b05af44aa8f030dc1bc5ece77f14548aa290352d) — 2026-06-11
+- [公司经营管理总结PPT报告,适用于总经理汇报，值得收藏！](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247488122&idx=1&sn=70924b6bc63749fd7c1d2f4e3b5f65a3&chksm=ffd57d9bc8a2f48dcaa933bd2be5116ba93dd2c96d8f3fe7f9b0a13805489ab23f0d07effd3d) — 2026-04-28
+- [制造业运营总监一季度工作总结及规划报告PPT，推荐收藏！](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247487779&idx=1&sn=dc920b84512988a7ae90bbdda334f0ec&chksm=ffd57ec2c8a2f7d4bfb57fa062a39a1572f9efe8e9bcc7121af609f60bfb70243e851064cad4) — 2026-04-16
+- [工厂运营管理部2025年总结及26年战略规划PPT（适用于总经理、副总）](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247486090&idx=1&sn=2758b14c92e2f64a962fc0b6bd44f375&chksm=ffd5656bc8a2ec7d2bed1e89c2f0cd5add6778e3ba53d050d9b168cce5424bfd161f2f079463) — 2026-02-10
+
 ### 设备部总结（19 篇）
 
 - [40页设备部长2026年工作述职PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247493722&idx=1&sn=5b5274f2160b969a61b8603fc4989f07&chksm=ffd687bbc8a10ead07b876ebee962767d47cb0cd2a22b1d3bf69cfcfbe73b0e81b9d7539821f) — 2026-11-20
@@ -336,17 +350,6 @@
 - [质量总监2025年度工作总结与26年战略提升（PPT）](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247485448&idx=1&sn=32dd922e7c36120ba205721c63d49b6a&chksm=ffd567e9c8a2eeffeaeab4cb71e64a9dfd69cbdff25ed25a7c5e405ae005face6fea1f895eab) — 2026-01-14
 - [供应商质量管理工程师（SQE）2025年终总结与2026年展望](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247485390&idx=1&sn=0e7b41e9b0e0388045159856fa28836c&chksm=ffd5682fc8a2e13958fe050c0282ecbc3787f24ee34a17c91bb522013ca9459d7b36da6e7906) — 2026-01-12
 - [2025年供应商质量管理部门年终总结PPT](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247485171&idx=1&sn=d06c4ee6b8cec8a7ce8ed300fcbacbb7&chksm=ffd56912c8a2e004cb620d23fe7bcce415993098d7904adee64e45e7b8767091a560c7ec197f) — 2025-12-23
-
-### 运营管理总结（8 篇）
-
-- [总经理2026年工作总结暨公司经营分析报告，50页PPT支持数据编辑](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247493512&idx=1&sn=5e8c683a1c44f1c09d7e0207821572a2&chksm=ffd68869c8a1017f4b685156e32fa12d1e78c1cc8e1f95c1fe2dff308a7a39464fe4388d648f) — 2026-11-13
-- [总经理10月份工作总结及规划PPT报告模板](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247493284&idx=1&sn=d308c7f1f3c03fae9bb7f10c8c3624d7&chksm=ffd68945c8a100530ed6efdc2ea6bfada1bbe598d30ffb0f989b550dc4c21fa1ddfa7d5e1166) — 2026-11-06
-- [总经理年度总结暨公司经营分析PPT报告](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247492793&idx=1&sn=4580919621edef2e958564d3dca65ff8&chksm=ffd68b58c8a1024ec12da1ab08cc3406033ea088f306603bbebff1cf8294afe76962c6fd4697) — 2026-10-23
-- [总经理6月工作总结PPT模板——暨公司月度经营分析报告](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247489435&idx=1&sn=547071d3b0623e6d0ffceb70d0ad1499&chksm=ffd5787ac8a2f16c83ab40981d054d2d1fd6fe13f8eca941bcb234764a1623a940e4f80654f6) — 2026-07-07
-- [运营管理部半年度工作总结及规划PPT，图表支持一键替换数据](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247488947&idx=1&sn=9e730a207c717db549c2a1e7825db5bd&chksm=ffd57a52c8a2f3440cd0d5ecc7e13ee39371b05af44aa8f030dc1bc5ece77f14548aa290352d) — 2026-06-11
-- [公司经营管理总结PPT报告,适用于总经理汇报，值得收藏！](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247488122&idx=1&sn=70924b6bc63749fd7c1d2f4e3b5f65a3&chksm=ffd57d9bc8a2f48dcaa933bd2be5116ba93dd2c96d8f3fe7f9b0a13805489ab23f0d07effd3d) — 2026-04-28
-- [制造业运营总监一季度工作总结及规划报告PPT，推荐收藏！](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247487779&idx=1&sn=dc920b84512988a7ae90bbdda334f0ec&chksm=ffd57ec2c8a2f7d4bfb57fa062a39a1572f9efe8e9bcc7121af609f60bfb70243e851064cad4) — 2026-04-16
-- [工厂运营管理部2025年总结及26年战略规划PPT（适用于总经理、副总）](http://mp.weixin.qq.com/s?__biz=MzYyMjU1NzgzOA==&mid=2247486090&idx=1&sn=2758b14c92e2f64a962fc0b6bd44f375&chksm=ffd5656bc8a2ec7d2bed1e89c2f0cd5add6778e3ba53d050d9b168cce5424bfd161f2f079463) — 2026-02-10
 
 ### 工艺部总结（20 篇）
 
