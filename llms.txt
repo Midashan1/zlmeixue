@@ -1,0 +1,10 @@
+# 质量背锅侠&质量美学文章库
+
+> 两个公众号（我是质量背锅侠、质量美学）共 470 篇制造业质量资料文章的完整索引。
+> 纯静态、无登录、无微信限制，AI 与搜索引擎可直接读取。
+
+- [文章库完整索引（HTML）](https://midashan1.github.io/zlmeixue/ai/index.html)：470 篇标题、日期、合集、原文链接全部写在源码里
+- [llms.txt 完整版](https://midashan1.github.io/zlmeixue/ai/llms.txt)：Markdown 格式的全部文章清单
+- [articles.md](https://midashan1.github.io/zlmeixue/ai/articles.md)：清单 + 已识别的 PPT 文字全文
+- [PPT 全文目录](https://midashan1.github.io/zlmeixue/ai/full/index.md)：OCR 识别出的文章正文（按合集分组）
+- [文章库在线检索版（人用）](https://midashan1.github.io/zlmeixue/v2/)
